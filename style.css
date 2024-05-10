@@ -1,0 +1,110 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:url('image/bg.jpg') no-repeat; 
+    background-size: cover;   
+    color: #fff;
+}
+
+.container {
+        align-items: right;
+        max-width: 550px;
+        height: auto;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: transparent;
+        border-radius: 8px;
+        border: 2px linear-gradient((to right,pink, rgb(251, 10, 251), rgb(0, 135, 253)));
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px) ;
+    }
+
+
+h2 {
+    text-align: center;
+    color:#fff;
+}
+
+/* Reset default table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Style table rows */
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style table cells */
+td {
+    padding: 8px;
+    vertical-align: top;
+}
+
+/* Style labels */
+label {
+    font-weight: bold;
+}
+
+/* Style form inputs */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea,
+input[type="tel"],
+input[type="file"] {
+    width: 100%;
+    font-size: medium;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style submit button */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    /* Make table cells display block for small screens */
+    td {
+        display: block;
+        width: 100%;
+    }
+    
+    /* Adjust padding for labels and inputs */
+    label {
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea,
+    input[type="tel"],
+    input[type="file"] {
+        margin-bottom: 10px;
+        font-size: small;
+    }
+
+    /* Center align submit button */
+    button[type="submit"] {
+        margin: 10px auto;
+        display: block;
+    }
+}
